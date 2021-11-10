@@ -31,13 +31,14 @@
   <main>
     <header>
       <h1>Contact</h1>
-      <p class="header-description">For new projects, ideas, business or anything you'd like to discuss, contact with me!</p>
+      <p class="header-description">For new projects, ideas, business or anything<br> you'd like to discuss, contact with me!</p>
     </header>
     <div class="main-content">
       <form action="" method="get">
         <input class="text-field__input" type="text" placeholder="Your name..." minlength="3" id="username" required >  
-        <input class="text-field__input" type="email" placeholder="Your email..." id="email" name="email" required>
-        <input class="text-field__input" type="tel" placeholder="Your phone number..." id="phone-number">
+        <input class="text-field__input" type="email" pattern="[a-zA-Z]{*}@[a-zA-Z]{*}.[a-zA-Z]{3}"
+        placeholder="Your email..." id="email" name="email"  required>
+        <input class="text-field__input" type="tel" placeholder="Your phone number..." id="phone-number" data-mask="(00) 0000-0000">
         <textarea name="" id="message" cols="30" rows="10" placeholder="Your message..."></textarea>
       </form>
       <div class="contact-info">
@@ -58,7 +59,8 @@
       <p class="footer-text-right">Made with <span class="love">love</span> by Auskteez</p>
     </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>

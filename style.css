@@ -153,3 +153,7 @@ p {
   color: #ff2b58;
   font-weight: bold;
 }
+
+input:invalid {
+  border: 2px red;
+}
