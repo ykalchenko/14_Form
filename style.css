@@ -154,6 +154,6 @@ p {
   font-weight: bold;
 }
 
-input:invalid {
+input:not(:placeholder-shown):invalid {
   border: #ff2b58 solid 2px;
 }
