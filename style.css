@@ -52,7 +52,7 @@ h1 {
 .header-description {
   text-align: center;
   font-weight: 300;
-  padding: 5px 605px 10px 568px;
+  /* padding: 5px 605px 10px 568px; */
   font-size: 17px;
   line-height: 24px;
 }
@@ -154,6 +154,6 @@ p {
   font-weight: bold;
 }
 
-input:invalid {
-  border: #ff2b58 solid 3px;
+input:not(:placeholder-shown):invalid {
+  border: #ff2b58 solid 2px;
 }
